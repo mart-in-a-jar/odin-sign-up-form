@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+:root {
+    --side-size: 35vw;
+}
+
+.logo {
+    font-family: "Diplomata SC", cursive;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.151);
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.content {
+    display: flex;
+    border: 1px solid #000;
+}
+
+.sidepanel {
+    display: flex;
+    width: var(--side-size);
+    flex-direction: column;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(67, 163, 11);
+    width: calc(100vw - var(--side-size));
+}
