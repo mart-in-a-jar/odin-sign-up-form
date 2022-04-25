@@ -24,9 +24,32 @@
                 <h2>Text</h2>
             </div>
             <div class="main-content">
-                <form action=""></form>
+                <form action="https://httpbin.org/post" method="post" id="signup-form">
+                    <div class="form-row">
+                        <label for="firstname">First name</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="form-row">
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname"></div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"></div>
+                    <div class="form-row">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone"></div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password"></div>
+                    <div class="form-row">
+                        <label for="password-confirm">Confirm password</label>
+                        <input type="password" id="password-confirm"></div>
+                </form>
             </div>
-            <div class="main-bottom"></div>
+            <div class="main-bottom">
+                <button type="submit" form="signup-form">Create account</button>
+                <p>Already have an account? <a href="login.js">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
