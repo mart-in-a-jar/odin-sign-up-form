@@ -134,3 +134,8 @@ button[type="submit"] {
     color: var(--brown);
     font-weight: 550;
 }
+
+label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
