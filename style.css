@@ -139,3 +139,13 @@ label {
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+
+.main-top {
+    padding-bottom: 120px;
+}
+
+@media screen and (max-height: 750px) {
+    .main-top {
+        padding-bottom: 20px;
+    }
+}
