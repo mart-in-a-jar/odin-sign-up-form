@@ -2,6 +2,8 @@
 
 :root {
     --side-size: 35vw;
+    --brown: #875029;
+    font-family: sans-serif;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     background-color: rgba(0, 0, 0, 0.363);
     color: white;
     -webkit-text-stroke: 1px black;
-    margin-top: 30vh;
+    margin-top: max(30vh, 110px);
     width: 100%;
     justify-content: center;
 }
@@ -33,7 +35,7 @@ body {
 
 .content {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidepanel {
@@ -45,13 +47,16 @@ body {
     background-position: center;
     justify-content: space-between;
     align-items: center;
+    min-height: 500px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     width: calc(100vw - var(--side-size));
-    justify-content: space-evenly;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    min-height: 500px;
 }
 
 .photo-credit {
@@ -67,10 +72,17 @@ a:link {
 input {
     width: 250px;
     height: 23px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(167, 165, 165);
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 4px black;
 }
 
 form {
-    margin: 0 50px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -84,4 +96,41 @@ label {
 
 input[type="password"].error {
     border: 1px solid red;
+}
+
+.password-error {
+    color: red;
+    margin-top: 0;
+    display: none;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.main>* {
+    padding: 30px 50px;
+}
+
+.main-content h2 {
+    margin-top: 0px;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: var(--brown);
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.main-bottom a {
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: 550;
 }

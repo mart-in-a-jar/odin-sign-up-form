@@ -20,30 +20,39 @@
         </div>
         <div class="main">
             <div class="main-top">
-                <h2>Text</h2>
-                <h2>Text</h2>
+                <h2>Hei og velkommen til denne siden hvor du kan registrere en bruker
+                    bla bla og bla.
+                </h2>
+                <h2>Registrer deg <em>nå</i>!</em>
             </div>
             <div class="main-content">
+                <h2>Let's do this!</h2>
                 <form action="https://httpbin.org/post" method="post" id="signup-form">
-                    <div class="form-row">
+                    <div class="form-field">
                         <label for="firstname">First name</label>
-                        <input type="text" name="firstname" id="firstname">
+                        <input type="text" name="firstname" id="firstname" required>
                     </div>
-                    <div class="form-row">
+                    <div class="form-field">
                         <label for="lastname">Last name</label>
-                        <input type="text" name="lastname" id="lastname"></div>
-                    <div class="form-row">
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="form-field">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email"></div>
-                    <div class="form-row">
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-field">
                         <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" id="phone"></div>
-                    <div class="form-row">
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-field password">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password"></div>
-                    <div class="form-row">
+                        <input type="password" name="password" id="password" required minlength="8">
+                        <p class="password-error">* Passwords do not match</p>
+                    </div>
+                    <div class="form-field">
                         <label for="password-confirm">Confirm password</label>
-                        <input type="password" id="password-confirm"></div>
+                        <input type="password" id="password-confirm" required>
+                    </div>
                 </form>
             </div>
             <div class="main-bottom">
