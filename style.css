@@ -109,7 +109,7 @@ input[type="password"].error {
     padding: 30px 0;
 }
 
-.main>* {
+.main > * {
     padding: 30px 50px;
 }
 
@@ -141,11 +141,5 @@ label {
 }
 
 .main-top {
-    padding-bottom: 120px;
-}
-
-@media screen and (max-height: 750px) {
-    .main-top {
-        padding-bottom: 20px;
-    }
+    padding-bottom: min(10vh, 10%);
 }
