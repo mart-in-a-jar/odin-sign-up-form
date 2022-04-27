@@ -143,3 +143,16 @@ label {
 .main-top {
     padding-bottom: min(10vh, 10%);
 }
+
+@media (max-width: 480px) {
+    .content {
+        min-height: 0;
+    }
+    input {
+        width: 200px;
+    }
+}
+
+.buttonDisabled:hover {
+    cursor: not-allowed;
+}
